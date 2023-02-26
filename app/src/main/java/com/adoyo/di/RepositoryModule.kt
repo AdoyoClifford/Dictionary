@@ -2,6 +2,7 @@ package com.adoyo.di
 
 import com.adoyo.dictionaryapp.data.remote.DictionaryApi
 import com.adoyo.dictionaryapp.data.repository.DefinitionRepository
+import com.adoyo.dictionaryapp.data.repository.DefinitionRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
