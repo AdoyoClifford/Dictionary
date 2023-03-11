@@ -2,7 +2,7 @@
 <resources>
     <style name="Theme.AppSplash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/sky_blue</item>
-        <item name="windowSplashScreenAnimatedIcon">@color/sky_blue</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/dictionary</item>
         <item name="windowSplashScreenIconBackgroundColor">@color/sky_blue</item>
         <item name="postSplashScreenTheme">@color/sky_blue</item>
 
