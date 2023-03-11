@@ -1,7 +1,9 @@
 package com.adoyo.dictionaryapp.presentation
 
+import android.widget.Space
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
@@ -77,6 +79,16 @@ fun HomeScreen(
                 )
             }
         ) { paddingValues ->
+            HomeContent(
+                definitionUiState = definitionUiState,
+                typedWord = typedWord,
+                setWordToBeSearched = { word ->
+                    definitionViewModel.setTypedWord(word)
+                },
+                searchWord = { definitionViewModel.getDefinition() },
+                meanings = definitions,
+                paddingValues = paddingValues
+            )
 
         }
     }
@@ -134,6 +146,14 @@ fun HomeContent(
                         phonetic = definitionUiState.definition[0].phonetic ?: "---"
                     )
                 }
+            }
+            items(meanings) { meaning ->
+                Spacer(modifier = Modifier.height(10.dp))
+
+                PartsDefinition(
+                    partsOfSpeech = meaning.partOfSpeech ?: "",
+                    definition = meaning.definitions ?: emptyList()
+                )
             }
         }
     }

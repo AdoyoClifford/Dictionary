@@ -24,6 +24,10 @@ class DefinitionViewModel @Inject constructor(
     private val _typedWord = mutableStateOf("")
     val typedWord: State<String> = _typedWord
 
+    fun setTypedWord(typedWord: String) {
+        _typedWord.value = typedWord
+    }
+
     private val _eventFlow = MutableSharedFlow<UiEvents>()
     val eventFlow: SharedFlow<UiEvents> = _eventFlow.asSharedFlow()
 
