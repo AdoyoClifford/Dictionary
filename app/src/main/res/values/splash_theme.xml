@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppSplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/sky_blue</item>
+        <item name="windowSplashScreenAnimatedIcon">@color/sky_blue</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/sky_blue</item>
+        <item name="postSplashScreenTheme">@color/sky_blue</item>
+
+        <item name="android:statusBarColor">@color/sky_blue</item>
+        <item name="android:navigationBarColor">@color/sky_blue</item>
+    </style>
+</resources>
