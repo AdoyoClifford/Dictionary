@@ -21,7 +21,7 @@ import com.airbnb.lottie.compose.rememberLottieComposition
 @Composable
 fun EmptyComponent(
     isLoading: Boolean,
-    definition: List<DefinitionResponseModel>
+    definition: List<DefinitionResponseModel>?
 ) {
     if (!isLoading && definition.isNullOrEmpty()) {
         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {

@@ -1,9 +1,6 @@
 package com.adoyo.dictionaryapp.presentation
 
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
@@ -12,6 +9,7 @@ import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.SpanStyle
@@ -23,7 +21,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.adoyo.common.UiEvents
 import com.adoyo.dictionaryapp.data.remote.Meaning
 import com.adoyo.dictionaryapp.presentation.uistate.DefinitionUiState
-import com.adoyo.dictionaryapp.presentation.uistate.components.SearchField
+import com.adoyo.dictionaryapp.presentation.uistate.components.*
 import com.adoyo.dictionaryapp.ui.theme.DictionaryAppTheme
 import kotlinx.coroutines.flow.collectLatest
 
@@ -109,7 +107,34 @@ fun HomeContent(
                 )
             }
 
+            if (definitionUiState.isLoading || definitionUiState.definition?.isEmpty() == true) {
+                item {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        LoadingComponent(isLoading = definitionUiState.isLoading)
 
+                        EmptyComponent(
+                            isLoading = definitionUiState.isLoading,
+                            definition = definitionUiState.definition
+                        )
+                    }
+                }
+
+            }
+
+            if (!definitionUiState.isLoading && !definitionUiState.definition.isNullOrEmpty()) {
+                item {
+                    Spacer(
+                        modifier = Modifier.height(15.dp)
+                    )
+                    PronunciationComponent(
+                        word = definitionUiState.definition[0].word ?: "",
+                        phonetic = definitionUiState.definition[0].phonetic ?: "---"
+                    )
+                }
+            }
         }
     }
 }
