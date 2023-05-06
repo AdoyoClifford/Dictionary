@@ -12,17 +12,17 @@ This is a simple dictionary app built with jetpack compose, and  made use of the
 
 ## Screenshots
 ### Home Screen
-<img src="app/screenshots/HomeScreen.jpg"
+<img src="app/screenshots/HomeScreen.jpg" width="200" height="400"
         alt="Markdown Monster icon"
         style="float: left; margin-right: 10px;" />
 
 ### Search Screen
-<img src="app/screenshots/search.jpg"
+<img src="app/screenshots/search.jpg" width="200" height="400"
         alt="Markdown Monster icon"
         style="float: left; margin-right: 10px;" />
 
 ### Word Screen
-<img src="app/screenshots/result.jpg"
+<img src="app/screenshots/result.jpg" width="200" height="400"
         alt="Markdown Monster icon"
         style="float: left; margin-right: 10px;" />
 
