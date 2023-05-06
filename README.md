@@ -12,20 +12,21 @@ This is a simple dictionary app built with jetpack compose, and  made use of the
 
 ## Screenshots
 
-<div style="display: flex;">
-  <div style="margin-right: 10px;">
-    <h3>Home Screen</h3>
-    <img src="app/screenshots/HomeScreen.jpg" width="200" height="400" alt="Home Screen" />
-  </div>
-  <div style="margin-right: 10px;">
-    <h3>Search Screen</h3>
-    <img src="app/screenshots/search.jpg" width="200" height="400" alt="Search Screen" />
-  </div>
-  <div>
-    <h3>Word Screen</h3>
-    <img src="app/screenshots/result.jpg" width="200" height="400" alt="Word Screen" />
-  </div>
+<div style="display: flex; flex-direction: row;">
+    <div>
+        <h3>Home Screen</h3>
+        <img src="app/screenshots/HomeScreen.jpg" width="200" height="400" alt="Home Screen"/>
+    </div>
+    <div>
+        <h3>Search Screen</h3>
+        <img src="app/screenshots/search.jpg" width="200" height="400" alt="Search Screen"/>
+    </div>
+    <div>
+        <h3>Word Screen</h3>
+        <img src="app/screenshots/result.jpg" width="200" height="400" alt="Word Screen"/>
+    </div>
 </div>
+
 
 
 
