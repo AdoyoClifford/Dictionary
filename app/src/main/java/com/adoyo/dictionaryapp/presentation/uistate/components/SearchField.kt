@@ -46,7 +46,7 @@ fun SearchField(
             }
         }, shape = Shapes.small,
         colors = TextFieldDefaults.textFieldColors(
-            backgroundColor = Color(0xFFEBE7E7),
+           // backgroundColor = Color.White,
 
             unfocusedIndicatorColor = Color(0xFFEBE7E7),
 

@@ -11,9 +11,22 @@ This is a simple dictionary app built with jetpack compose, and  made use of the
 - Get the pronunciation of the word
 
 ## Screenshots
-<img src=""
+### Home Screen
+<img src="app/screenshots/HomeScreen.jpg"
         alt="Markdown Monster icon"
         style="float: left; margin-right: 10px;" />
+
+### Search Screen
+<img src="app/screenshots/search.jpg"
+        alt="Markdown Monster icon"
+        style="float: left; margin-right: 10px;" />
+
+### Word Screen
+<img src="app/screenshots/result.jpg"
+        alt="Markdown Monster icon"
+        style="float: left; margin-right: 10px;" />
+
+
 
 ## Libraries Used
 - [Jetpack Compose](https://developer.android.com/jetpack/compose) - A modern toolkit for building native Android UI.

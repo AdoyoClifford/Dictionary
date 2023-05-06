@@ -57,25 +57,12 @@ fun HomeScreen(
             topBar = {
                 TopAppBar(
                     title = {
-                        Text(text = buildAnnotatedString {
-                            withStyle(
-                                style = SpanStyle(
-                                    fontSize = 16.sp, color = Color.White
-                                )
-                            ) {
-                                append("Your\n")
-                            }
-                            withStyle(
-                                style = SpanStyle(
-                                    fontSize = 14.sp,
-                                    color = Color.White
-                                )
-                            ) {
-                                append("Dictionary")
-                            }
-                        })
+                        Text(
+                            text = "Dictionary App",
+                            fontSize = 20.sp,
+                            color = Color.White
+                        )
                     },
-                    backgroundColor = Color(0xFF4C7AF2)
                 )
             }
         ) { paddingValues ->
