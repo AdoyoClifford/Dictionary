@@ -11,20 +11,21 @@ This is a simple dictionary app built with jetpack compose, and  made use of the
 - Get the pronunciation of the word
 
 ## Screenshots
-### Home Screen
-<img src="app/screenshots/HomeScreen.jpg" width="200" height="400"
-        alt="Markdown Monster icon"
-        style="float: left; margin-right: 10px;" />
 
-### Search Screen
-<img src="app/screenshots/search.jpg" width="200" height="400"
-        alt="Markdown Monster icon"
-        style="float: left; margin-right: 10px;" />
-
-### Word Screen
-<img src="app/screenshots/result.jpg" width="200" height="400"
-        alt="Markdown Monster icon"
-        style="float: left; margin-right: 10px;" />
+<div style="display: flex;">
+  <div style="margin-right: 10px;">
+    <h3>Home Screen</h3>
+    <img src="app/screenshots/HomeScreen.jpg" width="200" height="400" alt="Home Screen" />
+  </div>
+  <div style="margin-right: 10px;">
+    <h3>Search Screen</h3>
+    <img src="app/screenshots/search.jpg" width="200" height="400" alt="Search Screen" />
+  </div>
+  <div>
+    <h3>Word Screen</h3>
+    <img src="app/screenshots/result.jpg" width="200" height="400" alt="Word Screen" />
+  </div>
+</div>
 
 
 
